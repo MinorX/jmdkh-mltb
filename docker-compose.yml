@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - CONFIG_FILE_URL=$CONFIG_FILE_URL
+      - DATABASE_URL=$DATABASE_URL
     command: bash start.sh
     restart: on-failure
     ports:
